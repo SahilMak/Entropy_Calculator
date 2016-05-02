@@ -22,3 +22,8 @@ for line in file:
 # Calculate probabilities
 for x in range(len(chars)):
   probs.append(counts[x] / total)
+
+# Calculate entropy
+for x in range(len(chars)):
+  entropy += -probs[x] * math.log(probs[x], 2)
+print(entropy)
