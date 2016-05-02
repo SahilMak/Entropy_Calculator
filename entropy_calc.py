@@ -4,3 +4,8 @@ import math
 
 # Get file from command line
 file = open(sys.argv[1])
+
+# Initialize variables
+chars = []
+counts = []
+total = []
