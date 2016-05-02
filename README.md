@@ -1,2 +1,2 @@
 # Entropy_Calculator
-Calculates the entropy (as defined by information theorist Shannon) of a given string from a file input.
+Calculates the Shannon entropy of a string from a given file input.
