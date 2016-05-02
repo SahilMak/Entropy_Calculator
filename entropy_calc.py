@@ -18,3 +18,7 @@ for line in file:
       counts.append(0)
     counts[chars.index(element)] += 1
     total += 1
+
+# Calculate probabilities
+for x in range(len(chars)):
+  probs.append(counts[x] / total)
