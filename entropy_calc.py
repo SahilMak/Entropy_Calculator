@@ -8,7 +8,8 @@ file = open(sys.argv[1])
 # Initialize variables
 chars = []
 counts = []
-total = []
+total = 0
+entropy = 0
 
 # Read file
 for line in file:
