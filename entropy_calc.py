@@ -1,5 +1,4 @@
 #!/usr/bin/env python3.5
-import sys
 import math
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename
