@@ -10,9 +10,18 @@ def open_file():
   root = Tk()
   # Hide blank window
   root.withdraw()
+  # Get user name
+  user = getpass.getuser()
+  # Define default open path
+  path = 'C:/Users/%s' % user
+  # Define file types
+  ftypes = (("Text Documents", "*.txt"), ("All Files", "*.*"))
+  # Get file name
+  root.fileName = askopenfilename(filetypes=ftypes, initialdir=path)
+  return root.fileName
 
-# Get file from command line
-file = open(sys.argv[1])
+# Get file from user
+file = open(open_file())
 # Initialize variables
 chars = []
 counts = []
