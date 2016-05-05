@@ -4,6 +4,9 @@ import math
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename
 
+def open_file():
+  # function
+
 # Get file from command line
 file = open(sys.argv[1])
 
